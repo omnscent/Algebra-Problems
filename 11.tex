@@ -1,0 +1,238 @@
+\subsection{群的基本概念}
+\begin{prob}
+ 证明群的定义可以简化为：如果一个非空集合$G$上定义了一个二元运算$\circ $，满足：
+\begin{enumerate}[$(1)$]
+\item {\heiti{结合律：}}$\left(a\circ b\right)\circ c=a\circ \left(b\circ c\right)\left(\forall a,b,c\in G\right)$;
+\item 存在{\heiti{左幺元：}}存在$e\in G$，使得对任意的$a\in G$，都有
+\begin{equation*}
+e\circ a=a;
+\end{equation*}
+\item 存在{\heiti{左逆元：}}对任意的$a\in G$，存在$b\in G$，使得
+\begin{equation*}
+b\circ a=e,
+\end{equation*}
+\end{enumerate}
+则$G$关于运算$\circ $构成一个群。
+\end{prob}
+
+\begin{prob}
+举例说明：在上题中将条件$(3)$改为“存在{\heiti{右逆元：}} 对任意的$a\in G$，存在$b\in G$，使得$a\circ b=e$”，则$G$不一定是群。
+\end{prob}
+
+\begin{prob}
+设$G$是一个非空集合，其中定义了一个二元运算$\circ $。证明：如果此运算满足结合律，并且对于$G$中任意两个元素$a,b$，方程$a\circ x=b$和$y\circ a=b$都在$G$中有解，则$\left(G,\circ \right)$是群。
+\end{prob}
+
+\begin{prob}
+设$G$是一个非空的有限集合，其中定义了一个二元运算$\circ $。证明：如果此运算满足结合律，并且对于$G$中任意的三个元素$a,b,c$，都有（左消去律）$ab=ac\Rightarrow b=c$以及（右消去律）$ba=ca\Rightarrow b=c$，则$\left(G,\circ \right)$是群。
+\end{prob}
+
+\begin{prob}
+设$G$是群，$a,b\in G$，如果$aba^{-1}=b^{r}$，证明$a^{i}ba^{-i}=b^{r^{i}}$。
+\end{prob}
+
+\begin{prob}
+证明不存在恰有两个$2$阶元素的群。
+\end{prob}
+
+\begin{prob}
+设$G$是群。如果对于任意的$a,b\in G$，都有$\left(ab\right)^{2}=a^{2}b^{2}$，证明$G$是交换群。并由此证明：如果${\rm exp}\mathop{}\left(G\right)=2$，则$G$交换。
+\end{prob}
+
+\begin{prob}
+在$S_{3}$中找出两个元素$x,y$，使得$\left(xy\right)^{2}\neq x^{2}y^{2}$。
+\end{prob}
+
+\begin{prob}
+设$G$是群，$i$为任意确定的正整数。如果对于任意的$a,b\in G$，都有$\left(ab\right)^{k}=a^{k}b^{k},k=i,i+1,i+2$，证明$G$是交换群。
+\end{prob}
+
+\begin{prob}
+证明：群$G$为交换群当且仅当$x\longmapsto x^{-1}(x\in G)$是同构映射。
+\end{prob}
+
+\begin{prob}
+设$S$是群$G$的非空子集，在$G$中定义一个二元关系``$\backsim $'':$a\backsim b \Longleftrightarrow ab^{-1}\in S$。证明$\backsim $是一个等价关系当且仅当$S$是$G$的子群。
+\end{prob}
+
+\begin{prob}
+设$H,K$为群$G$的子群，证明$HK\leqslant G$当且仅当$HK=KH$。
+\end{prob}
+
+\begin{prob}
+设$n\in \mathbb{Z}$，则$n\mathbb{Z}$是整数加法群$\mathbb{Z}$的子群。并证明$n\mathbb{Z}\cong \mathbb{Z}$。
+\end{prob}
+
+\begin{prob}
+证明：$S_{4}$的子集$B=\left\{\left(1\right),\left(12\right)\left(34\right),\left(13\right)\left(24\right),\left(14\right)\left(23\right) \right\}$是一个子群，且$B$与四次单位根群$\mu _{4}$不同构。
+\end{prob}
+
+\begin{prob}
+令
+\begin{equation*}
+A=\begin{pmatrix}
+0&1\\
+1&0
+\end{pmatrix},B=\begin{pmatrix}
+e^{\frac{2\pi i}{n}}&0\\
+0&e^{-\frac{2\pi i}{n}}
+\end{pmatrix},
+\end{equation*}
+证明集合$\left\{B,B^{2},\cdots ,B^{n},AB,AB^{2},\cdots ,AB^{n} \right\}$在矩阵乘法下构成群，并且此群与二面体群$D_{2n}$同构。
+\end{prob}
+
+\begin{prob}
+证明偶数阶群中必有元素$a\neq e$，满足$a^{2}=e$。
+\end{prob}
+
+\begin{prob}
+对$n>2$，证明在有限群$G$中阶为$n$的元素个数是偶数。
+\end{prob}
+
+\begin{prob}
+对于群中的任意二元素$a,b$，证明$ab$与$ba$的阶相等。
+\end{prob}
+
+\begin{prob}
+在群${\rm SL}_{2}\left(\mathbb{Q}\right)$中，证明元素
+\begin{equation*}
+a=\begin{pmatrix}
+0&-1\\
+1&0
+\end{pmatrix}
+\end{equation*}
+的阶为$4$,元素
+\begin{equation*}
+b=\begin{pmatrix}
+0&1\\
+-1&-1
+\end{pmatrix}
+\end{equation*}
+的阶为$3$，而$ab$为无限阶元素。
+\end{prob}
+
+\begin{prob}
+设$G$是交换群，证明$G$中的全体有限阶元素构成$G$的一个子群。
+\end{prob}
+
+\begin{prob}
+如果$G$只有有限多个子群，证明$G$是有限群。
+\end{prob}
+
+\begin{prob}
+设$H,K$为有限群$G$的子群，证明$\displaystyle \left\lvert HK \right\rvert =\frac{\left\lvert H \right\rvert \cdot \left\lvert K \right\rvert }{\left\lvert H\cap K \right\rvert }$。
+\end{prob}
+
+\begin{prob}
+证明指数为$2$的子群必为正规子群。
+\end{prob}
+
+\begin{prob}
+证明不存在恰有两个指数为$2$的子群的群。
+\end{prob}
+
+\begin{prob}
+写出二面体群$D_{20}$的全部正规子群。
+\end{prob}
+
+\begin{prob}
+设$S$为$G$的非空子集，令
+\begin{equation*}
+\begin{array}{*{20}{l}}
+    C_{G}\left(S\right)=\left\{x\in G \vert xa=ax,\forall a\in S\right\},\\
+    N_{G}\left(S\right)=\left\{x\in G \vert xSx^{-1}=S\right\}
+\end{array}
+\end{equation*}
+($C_{G}\left(S\right)$和$N_{G}\left(S\right)$分别称为$S$在$G$中的{\heiti 中心化子}和{\heiti 正规化子})。证明：
+\begin{enumerate}[$(1)$]
+\item $C_{G}\left(S\right)$和$N_{G}\left(S\right)$都是$G$的子群;
+\item $C_{G}\left(S\right)\trianglelefteq N_{G}\left(S\right)$。
+\end{enumerate}
+\end{prob}
+
+\begin{prob}
+设$H,K$为$G$的正规子群，证明：
+\begin{enumerate}[$(1)$]
+\item $HK=KH$;
+\item $HK\trianglelefteq G$;
+\item 如果$H\cap K=\left\{e \right\}$，则$G$同构于$G/H\oplus G/K$的子群。
+\end{enumerate}
+\end{prob}
+
+\begin{prob}
+设$m,n\in \mathbb{Z}$。证明$\mathbb{Z}/mn\mathbb{Z}\cong \mathbb{Z}/m\mathbb{Z}\oplus Z/n\mathbb{Z}$当且仅当$m$与$n$互素。
+\end{prob}
+
+\begin{prob}
+设$G$为有限群，$\mathop{}N\trianglelefteq G$,$\left\lvert N \right\rvert $与$\left\lvert G/N \right\rvert $互素。如果$G$的元素$a$的阶整除$\left\lvert N \right\rvert $，证明$a\in N$。
+\end{prob}
+
+\begin{prob}
+设$H,K$是群$G$的子群，证明$H\cap K$的任一左陪集是$H$的一个左陪集与$K$的一个左陪集的交。
+\end{prob}
+
+\begin{prob}
+设$H,K$都是群$G$的指数有限的子群，证明$H\cap K$在$G$中的指数也有限。
+\end{prob}
+
+\begin{prob}
+设$H$是群$G$的指数有限的子群，证明$G$有指数有限的正规子群。
+\end{prob}
+
+\begin{prob}
+设$p$为素数。证明所有的$p$阶群必为循环群，因此也是交换群。
+\end{prob}
+
+\begin{prob}
+试定出所有互不同构的$4$阶群。
+\end{prob}
+
+\begin{prob}
+证明阶小于$6$的群皆交换，举例说明存在$6$阶非交换群。
+\end{prob}
+
+\begin{prob}
+设$G$是$n$阶群，整数$m$与$n$互素。如果$g,h\in G$，且$g^{m}=h^{m}$，证明$g=h$。再证明对于任一$x\in G$，存在唯一的$y\in G$使得
+\begin{equation*}
+y^{m}=x
+\end{equation*}
+\end{prob}
+
+\begin{prob}
+设$G$是群，$\mathop{}g\in G$。若$o\left(g\right)=n$，则$o\left(g^{m}\right)=n/\left(m,n\right)$。
+\end{prob}
+
+\begin{prob}
+设$H\leqslant G,K\leqslant G,a,b\in G$。若$Ha=Kb$，则$H=K$。
+\end{prob}
+
+\begin{prob}
+设$A,B,C$为$G$的子群，并且$A\leqslant C$，证明
+\begin{equation*}
+AB\cap C=A\left(B\cap C\right)
+\end{equation*}
+\end{prob}
+
+\begin{prob}
+设$A,B,C$为群$G$的子群，并且$A\leqslant B$。如果$A\cap C=B\cap C,AC=BC$，证明$A=B$。
+\end{prob}
+
+\begin{prob}
+设$G$是群。令$\displaystyle Z\left(G\right)=\bigcap_{g\in G}C_{G}\left(g\right)$。称$Z\left(G\right)$为$G$的{\heiti 中心}。证明$Z\left(G\right)$是$G$的正规子群。
+\end{prob}
+
+\begin{prob}
+证明$2$阶正规子群必属于群的中心。
+\end{prob}
+
+\begin{prob}
+证明$A_{4}$没有$6$阶子群。
+\end{prob}
+
+\begin{prob}
+证明$Z\left(A\oplus B\right)=Z\left(A\right)\oplus Z\left(B\right)$。
+\end{prob}
+
+\begin{prob}
+证明：有限群$G$是二面体群的充分必要条件是$G$可由两个$2$阶元素生成。
+\end{prob}

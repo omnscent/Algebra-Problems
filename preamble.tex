@@ -1,0 +1,71 @@
+\usepackage[top=2.5cm,bottom=2.5cm,left=2.5cm,right=2.5cm]{geometry}
+\usepackage{graphicx}
+\usepackage{geometry}
+\usepackage{tikz}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{amsmath}
+\usepackage{bm}
+\usepackage{csquotes}
+\usepackage{xcolor}
+\usepackage{fancyhdr}
+\usepackage{enumerate}
+\usepackage{fontspec}
+\usepackage{framed}
+\usepackage{tcolorbox}
+\newcounter{problemname}[subsection]
+\usetikzlibrary{positioning}
+\makeatletter
+\@addtoreset{equation}{section}
+\makeatother
+\renewcommand{\theequation}{\arabic{section}.\arabic{equation}}
+\newtheorem{thm}{定理}
+\newtheorem{dy}{定义}
+\newtheorem{ex}{例}
+\newtheorem{yl}{引理}
+\newtheorem*{prop}{性质}
+\newtheorem*{mt}{命题}
+\newtheorem*{tl}{推论}
+\tcbuselibrary{breakable}
+\catcode`\。=\active
+\catcode`\，=\active
+\catcode`\；=\active
+\newcommand{。}{．}
+\newcommand{；}{;}
+\newcommand{，}{,}
+\newenvironment*{zhu}{\begin{proof}[\indent\bf 注]}{\renewcommand{\qedsymbol}{}\end{proof}}
+\newsavebox{\name}
+\newenvironment{yinyong}[1]
+{
+\sbox\name{-- #1}
+\begin{description}
+    \item \begin{center}``
+}
+{''\end{center}
+    \hspace*{\fill}\nolinebreak[3]
+    \hspace*{\fill}
+    \usebox{\name}
+    \end{description}
+}
+\definecolor{shadecolor}{RGB}{255, 255, 204}
+\definecolor{framecolor}{RGB}{250, 190, 0}
+\newenvironment{prob}{\stepcounter{problemname} \begin{tcolorbox}[breakable,colback=shadecolor,colframe=framecolor,title=\textbf{问题\arabic{problemname}.}] }{\end{tcolorbox}\par}
+%
+%可以用这个简单的形式
+% \newtheorem{prob}[problemname]{问题}
+%
+\newcommand*{\dif}{\mathop{}\!\mathrm{d}}
+\newcommand{\gs}[1]{{\begin{equation*}\begin{array}{*{20}{c}}\displaystyle#1\end{array}\end{equation*}}}
+\newcommand{\gsx}[1]{{\begin{equation}\begin{array}{*{20}{c}}\displaystyle#1\end{array}\end{equation}}}
+\newcommand{\h}[1]{{\heiti #1}}
+\newcommand{\z}[1]{{\rm #1}\mathop{}}
+\newcommand{\jc}[1]{\bfseries{#1}}
+\newcommand{\jdz}[1]{\left\lvert #1 \right\rvert}
+\newcommand{\fs}[1]{\left\lVert #1 \right\rVert}
+\newcommand{\dkh}[1]{ \left\{ #1 \right\} }
+\newcommand{\zkh}[1]{ \left[ #1 \right] }
+\newcommand{\kh}[1]{ \left( #1 \right) }
+\newcommand{\jkh}[1]{ \left\langle #1\right\rangle }
+\newcommand{\yh}[1]{“#1”}
+\bibliographystyle{plain}
+\endinput

@@ -30,9 +30,9 @@
 \catcode`\。=\active
 \catcode`\，=\active
 \catcode`\；=\active
-\newcommand{。}{．}
+\newcommand{。}{.\ }
 \newcommand{；}{;}
-\newcommand{，}{,}
+\newcommand{，}{,\ }
 \newenvironment*{zhu}{\begin{proof}[\indent\bf 注]}{\renewcommand{\qedsymbol}{}\end{proof}}
 \newsavebox{\name}
 \newenvironment{yinyong}[1]
@@ -50,9 +50,11 @@
 \definecolor{shadecolor}{RGB}{255, 255, 204}
 \definecolor{framecolor}{RGB}{250, 190, 0}
 \newenvironment{prob}{\stepcounter{problemname} \begin{tcolorbox}[breakable,colback=shadecolor,colframe=framecolor,title=\textbf{问题\arabic{problemname}.}] }{\end{tcolorbox}\par}
+\newenvironment{probx}{\stepcounter{problemname} \begin{tcolorbox}[breakable,colback=shadecolor,colframe=framecolor,title=\textbf{*问题\arabic{problemname}.}] }{\end{tcolorbox}\par}
 %
 %可以用这个简单的形式
 % \newtheorem{prob}[problemname]{问题}
+% \newtheorem{probx}[problemname]{*问题}
 %
 \newcommand*{\dif}{\mathop{}\!\mathrm{d}}
 \newcommand{\gs}[1]{{\begin{equation*}\begin{array}{*{20}{c}}\displaystyle#1\end{array}\end{equation*}}}

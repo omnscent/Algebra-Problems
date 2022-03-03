@@ -1,0 +1,137 @@
+\subsection{环的基本概念}
+\begin{prob}
+如果把整数环$\mathbb{Z}$中的加法和乘法的定义互换，即对于$a,b\in \mathbb{Z}$，定义$a\oplus b=ab$,$a\odot b=a+b$，试问$\left(\mathbb{Z};\oplus ,\odot\right)$是否构成环？
+\end{prob}
+
+\begin{prob}
+在集合$S=\mathbb{Z}\times \mathbb{Z}$上定义
+\begin{equation*}
+\begin{array}{*{20}{l}}
+\left(a,b\right)+\left(c,d\right)=\left(a+c,b+d\right)\\
+\left(a,b\right)\cdot \left(c,d\right)=\left(ac-bd,ad+bc\right)
+\end{array}
+\end{equation*}
+证明$\left(S;+,\cdot\right)$是交换幺环。
+\end{prob}
+
+\begin{prob}
+设$R$是交换幺环。对于$a,b\in R$，定义
+\begin{equation*}
+\begin{array}{*{20}{l}}
+a\oplus b=a+b-1,\\
+a\odot b=a+b-ab,
+\end{array}
+\end{equation*}
+证明$\left(R;\oplus ,\odot\right)$是交换幺环。
+\end{prob}
+
+\begin{prob}
+设$\left(G;+\right)$是交换群。对于$\varphi ,\phi\in {\rm End}\left(G\right)$，定义加法：
+\begin{equation*}
+\begin{array}{*{20}{l}}
+\varphi +\phi:&G\rightarrow G, &\\
+&g\longmapsto \varphi \left(g\right)+\phi\left(g\right),&g\in G.
+\end{array}
+\end{equation*}
+又定义$\varphi \cdot \phi$为$\varphi $与$\phi$的复合$\varphi \circ \phi$。证明$\left({\rm End}\left(G\right);+,\cdot\right)$构成幺环（称为$G$的{\heiti 自同态环}）。
+\end{prob}
+
+\begin{prob}
+设$G=\left(\mathbb{Z};+\right)$，求${\rm End}\left(G\right)$。
+\end{prob}
+
+\begin{prob}
+设$G$为$n$阶循环群，求${\rm End}\left(G\right)$。
+\end{prob}
+
+\begin{prob}
+设$G=\mathbb{Z}/n\mathbb{Z}\oplus \mathbb{Z}/n\mathbb{Z}$，求${\rm End}\left(G\right)$。
+\end{prob}
+
+\begin{prob}
+给出环$R$和它的子环$S$的例子，使得他们满足以下条件之一：
+\begin{enumerate}[$(1)$]
+\item $R$有$1$，但$S$没有$1$；
+\item $R$有$1$，但$S$有$1$；
+\item $R$与$S$都有$1$；
+\item $R$不交换，但$S$交换。
+\end{enumerate}
+\end{prob}
+
+\begin{prob}
+设$R$是环。如果存在$e_{l}\in R$，满足$e_{l}a=a\left(\forall a\in R\right)$，则称$e_{l}$为$R$的一个{\heiti 左幺元}。类似地，如果存在$e_{r}\in R$，满足$ae_{r}=a\left(\forall a\in R\right)$，则称$e_{r}$为$R$的一个{\heiti 右幺元}。证明：
+\begin{enumerate}[$(1)$]
+\item 如果$R$有左幺元又有右幺元，则$R$有幺元；
+\item 如果$R$有左幺元但没有非零零因子，则$R$有幺元；
+\item 如果$R$有左幺元但没有右幺元，则$R$至少有两个左幺元。
+\end{enumerate}
+\end{prob}
+
+\begin{prob}
+设$R$是环，$a\in R,a\neq 0$。如果存在$b\in R,b\neq 0$，使得$aba=0$，证明$a$是$b$的一个左零因子或右零因子。
+\end{prob}
+
+\begin{prob}
+设$R$是有限幺环，$a,b\in R$且$ab=1$。证明$ba=1$
+\end{prob}
+
+\begin{probx}
+设$R$是幺环，$a,b\in R,ab=1$但$ba\neq 1$。证明由无穷多个$x\in R$满足$ax=1$。
+\end{probx}
+
+\begin{prob}
+设$R$是环，$a\in R$。如果存在正整数$n$使得$a^{n}=0$，则称$a$为一个{\heiti 幂零元}。证明：如果$a$是幺环中的幂零元，则$1-a$可逆。
+\end{prob}
+
+\begin{prob}
+证明：在交换环$R$中全体幂零元组成一个理想（称为$R$的{\heiti 幂零根}或{\heiti 小根}）。
+\end{prob}
+
+\begin{prob}
+证明幺环中理想的加、乘法满足分配律。即设$I,J,K$是幺环$R$的理想，则
+\begin{equation*}
+\begin{array}{*{20}{c}}
+\left(I+J\right)K=IK+JK,\\
+K\left(I+J\right)=KI+KJ.
+\end{array}
+\end{equation*}
+\end{prob}
+
+\begin{prob}
+设$I$是交换幺环$R$的一个理想。令
+\begin{equation*}
+{\rm rad}I=\left\{x\in R\vert \text{存在正整数}n\text{使得}x^{n}\in I \right\}.
+\end{equation*}
+证明${\rm rad}I$是$R$的理想（${\rm rad}I$称为$I$的{\heiti 根理想}）。
+\end{prob}
+
+\begin{prob}
+证明域$K$上的$n$阶全矩阵环${\rm M}_n\left(K\right)$没有非平凡理想（这种环称为{\heiti 单环}）。
+\end{prob}
+
+\begin{prob}
+设$R$和$S$都是幺环，$\varphi :R\rightarrow S$是把$R$的幺元映到$S$的幺元的满同态，判断下述命题是否正确（给出证明或反例）：
+\begin{enumerate}[$(1)$]
+\item $\varphi $把幂零（幂等）元映为幂零（幂等）元（环中的元素$a$称为{\heiti 幂等元}，如果$a^{2}=a$）;
+\item $\varphi $把零因子映为零因子；
+\item $\varphi $把整环映为整环；
+\item 如果$S$是整环，则$R$是整环；
+\item $\varphi $把可逆元映为可逆元；
+\item 对于$a\in R$，如果$\varphi \left(a\right)$可逆，则$a$可逆。
+\end{enumerate}
+\end{prob}
+
+\begin{prob}
+设$R$是幺环，$T$是整环，$\varphi :R\rightarrow T$是环同态。证明$\varphi \left(1_{R}\right)=1_{T}$（$1_{R}$和$1_{T}$分别为$R$和$T$的幺元）。
+\end{prob}
+
+\begin{prob}
+证明习题$3$中构造的环与原来的环$R$同构。
+\end{prob}
+
+\begin{prob}
+设$R$是幺环，$R=R_{1}\oplus R_{2}\oplus \cdots \oplus R_{n}$是环$R$的一个内直和，$I$为$R$的一个理想。证明
+\begin{equation*}
+I=\left(I\cap R_{1}\right)\oplus \left(I\cap R_{2}\right)\oplus \cdots \oplus \left(I\cap R_{n}\right).
+\end{equation*}
+\end{prob}

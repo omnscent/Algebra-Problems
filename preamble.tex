@@ -18,6 +18,21 @@
 \makeatletter
 \@addtoreset{equation}{section}
 \makeatother
+\pagestyle{fancy}
+\ctexset{
+    section={
+        name={第,章},
+        format={\huge\bfseries}
+    },
+    subsection={
+        name={\S},
+        number=\thesection.\arabic{subsection},
+        format={\Large\bfseries}
+    }
+}
+\lhead{第\thesection 章\ 第\thesubsection 节}
+\rhead{$\cdot$\ \thepage\ $\cdot$}
+\cfoot{}
 \renewcommand{\theequation}{\arabic{section}.\arabic{equation}}
 \newtheorem{thm}{定理}
 \newtheorem{dy}{定义}

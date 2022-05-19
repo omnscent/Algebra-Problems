@@ -1,3 +1,8 @@
+%
+\ifdefined\XeTeXversion\else\ifdefined\pdftexversion\else
+\newcount\pdftexversion\pdftexversion=140
+\def\pdftexrevision{18}
+\fi\fi
 \documentclass[a4paper,UTF8]{article}  %类型
 \usepackage[heading=true]{ctex}
 \title{抽象代数习题}
@@ -5,6 +10,7 @@
 \date{\today}
 \input{preamble.tex}
 \begin{document}
+
 \maketitle
 \section{群、环、体、域的基本概念}
 \addtocounter{subsection}{-1}
@@ -18,4 +24,7 @@
 \input{C2/23.tex}
 \input{C2/24.tex}
 \input{C2/25.tex}
+\section{环}
+\input{C3/31.tex}
+\input{C3/32.tex}
 \end{document}
